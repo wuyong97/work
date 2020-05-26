@@ -9,7 +9,19 @@ Mainly make some data preprocessing, including read files, word segmentation, wo
 An implementation of ESIM model based on tensorflow < 2.0. And also refer to others' work. 
 ## 1.4 `train.py`  
 Including train, dev, and test the model.  
-After every opoch, the model will be verified on `dev` set. If the `f1 score` is getting better, `then` the model will be tested on `test` set. And we can get the finall result on `test` set.
+After every opoch, the model will be verified on `dev` set. If the `f1 score` is getting better, `then` the model will be tested on `test` set. And we can get the finall result on `test` set.  
+Make a `Prediction` based on `trained` model.  
+## 1.5 `init_infer.py`  
+For infering a new passage, mainly including `word segmentation`,  `word2id`. And turn the data into the form the model need.
+## 1.6 `parse_intended_harm.py`  
+Processing the `故意伤害罪` 裁判文书，mainly including `law extraction`, `fact extraction`, `reason extraction`.  
+## 1.7 `infer_intended_harm.py`  
+Accordin to the `故意伤害罪` 裁判文书, make an inference based on the trained mdoel.  
+## 1.8 `parse_divorce.py`  
+Processing the `离婚纠纷` 裁判文书，mainly including `law extraction`, `fact extraction`, `reason extraction`.  
+## 1.7 `infer_divorce.py`  
+Accordin to the `离婚纠纷` 裁判文书, make an inference based on the trained mdoel. 
+
 
 # 2."/data"  
 the `original` data: `train.txt`, `dev.txt`, `test.txt`.  
