@@ -1,4 +1,5 @@
 This repository is an Tensorflow_based implementation of ESIM model. Refer to paper "Enhanced LSTM for Natural Language Inference",which, I think, is a combination of LSTM and Attention Mechanism for contextual inference.
+
 1."/code"
 1.1 config.py
 Provide some parameters for training, like learning rate, dropout rate...a
