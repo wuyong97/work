@@ -112,7 +112,3 @@ class ESIM_model(object):
                                                                            dtype=tf.float32)
             a_bar = tf.concat(a_outputs, axis=2)
             return a_bar
-
-
-if __name__ == '__main__':
-    esim = ESIM_model(True, 20, 2, 10000, 300, 300, 0.001, 0.0001)
